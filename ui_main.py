@@ -28,14 +28,14 @@ class Ui_MainWindow(object):
         MainWindow.resize(500, 448)
         MainWindow.setMinimumSize(QSize(500, 448))
         MainWindow.setMaximumSize(QSize(500, 448))
-        MainWindow.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        MainWindow.setStyleSheet(u"background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0.0852273 rgba(93, 0, 0, 243), stop:0.335227 rgba(170, 0, 0, 255), stop:0.545455 rgba(193, 0, 0, 243), stop:0.715909 rgba(200, 16, 16, 255), stop:0.914773 rgba(210, 62, 62, 255));")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout_2 = QVBoxLayout(self.centralwidget)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.frame = QFrame(self.centralwidget)
         self.frame.setObjectName(u"frame")
-        self.frame.setStyleSheet(u"background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0.0681818 rgba(0, 55, 79, 243), stop:0.386364 rgba(33, 118, 140, 255), stop:0.755682 rgba(43, 161, 192, 255), stop:0.954545 rgba(113, 203, 241, 252));")
+        self.frame.setStyleSheet(u"background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0.0852273 rgba(93, 0, 0, 243), stop:0.335227 rgba(170, 0, 0, 255), stop:0.545455 rgba(193, 0, 0, 243), stop:0.715909 rgba(200, 16, 16, 255), stop:0.914773 rgba(210, 62, 62, 255));")
         self.frame.setFrameShape(QFrame.StyledPanel)
         self.frame.setFrameShadow(QFrame.Raised)
         self.verticalLayout = QVBoxLayout(self.frame)
@@ -50,7 +50,7 @@ class Ui_MainWindow(object):
         font = QFont()
         font.setKerning(True)
         self.lbl_tittle.setFont(font)
-        self.lbl_tittle.setStyleSheet(u"background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0.0681818 rgba(0, 55, 79, 243), stop:0.386364 rgba(33, 118, 140, 255), stop:0.755682 rgba(43, 161, 192, 255), stop:0.954545 rgba(113, 203, 241, 252));")
+        self.lbl_tittle.setStyleSheet(u"alternate-background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 235, 235, 206), stop:0.35 rgba(255, 188, 188, 80), stop:0.4 rgba(255, 162, 162, 80), stop:0.425 rgba(255, 132, 132, 156), stop:0.44 rgba(252, 128, 128, 80), stop:1 rgba(255, 255, 255, 0));")
         self.lbl_tittle.setTextFormat(Qt.AutoText)
         self.lbl_tittle.setPixmap(QPixmap(u"baianinho.png"))
         self.lbl_tittle.setScaledContents(True)
@@ -66,7 +66,7 @@ class Ui_MainWindow(object):
         self.label = QLabel(self.frame)
         self.label.setObjectName(u"label")
         self.label.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.label.setStyleSheet(u"background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0.0681818 rgba(0, 55, 79, 243), stop:0.386364 rgba(33, 118, 140, 255), stop:0.755682 rgba(43, 161, 192, 255), stop:0.954545 rgba(113, 203, 241, 252));")
+        self.label.setStyleSheet(u"background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0.0852273 rgba(93, 0, 0, 243), stop:0.335227 rgba(170, 0, 0, 255), stop:0.545455 rgba(193, 0, 0, 243), stop:0.715909 rgba(200, 16, 16, 255), stop:0.914773 rgba(210, 62, 62, 255));")
 
         self.verticalLayout.addWidget(self.label)
 
@@ -95,19 +95,18 @@ class Ui_MainWindow(object):
         self.btn_open = QPushButton(self.frame_2)
         self.btn_open.setObjectName(u"btn_open")
         self.btn_open.setMinimumSize(QSize(120, 30))
-        font2 = QFont()
-        font2.setPointSize(12)
-        font2.setBold(True)
-        self.btn_open.setFont(font2)
         self.btn_open.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.btn_open.setStyleSheet(u"QPushButton{\n"
-"    border-top-right-radius: 15px;\n"
-"    background-color:rgb(255, 255, 255);\n"
-"\n"
-"    color: rgb(0, 109, 159);\n"
+"    background-color:#c3c3c3;\n"
+"    color:black; border: solid 0px;\n"
+"    font: bold 14px \"Segoe UI\";\n"
+"    border-top-right-radius:15px;\n"
 "}\n"
-"QPushButton:hover\n"
-"{color: #fff;background-color: rgb(0, 157, 235)}")
+"\n"
+"QPushButton:hover{\n"
+"    background-color:rgb(227, 24, 54);\n"
+"    color:#fff\n"
+"}")
 
         self.horizontalLayout.addWidget(self.btn_open)
 
@@ -121,19 +120,18 @@ class Ui_MainWindow(object):
         self.pushButton_2 = QPushButton(self.frame)
         self.pushButton_2.setObjectName(u"pushButton_2")
         self.pushButton_2.setMinimumSize(QSize(200, 30))
-        self.pushButton_2.setFont(font2)
         self.pushButton_2.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.pushButton_2.setStyleSheet(u"QPushButton{\n"
-"background-color: rgb(255, 255, 255);\n"
-"border-radius: 15px;\n"
-"color: rgb(0, 109, 159);\n"
-"\n"
+"    background-color:#c3c3c3;\n"
+"    color:black;\n"
+"    border: solid 0px;\n"
+"    font: bold 14px \"Segoe UI\";\n"
+"    border-radius:10px;\n"
 "}\n"
 "\n"
 "QPushButton:hover{\n"
-"color: #fff;\n"
-"background-color: rgb(0, 157, 235)\n"
-"\n"
+"    background-color:rgb(227, 24, 54);\n"
+"    color:#fff\n"
 "}")
 
         self.verticalLayout.addWidget(self.pushButton_2, 0, Qt.AlignHCenter)
@@ -144,10 +142,10 @@ class Ui_MainWindow(object):
 
         self.lbl_name = QLabel(self.frame)
         self.lbl_name.setObjectName(u"lbl_name")
-        font3 = QFont()
-        font3.setFamilies([u"MV Boli"])
-        font3.setPointSize(16)
-        self.lbl_name.setFont(font3)
+        font2 = QFont()
+        font2.setFamilies([u"MV Boli"])
+        font2.setPointSize(16)
+        self.lbl_name.setFont(font2)
 
         self.verticalLayout.addWidget(self.lbl_name)
 
@@ -164,7 +162,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.lbl_tittle.setText("")
-        self.label.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:18pt; font-weight:600; color:#ffffff;\">DIVISOR DE PDF</span></p></body></html>", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:24pt; font-weight:600; color:#ffffff;\">DIVISOR DE PDF</span></p></body></html>", None))
         self.txt_path.setPlaceholderText(QCoreApplication.translate("MainWindow", u"SELECIONE O PDF -->", None))
         self.btn_open.setText(QCoreApplication.translate("MainWindow", u"ABRIR", None))
         self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"DIVISOR", None))
