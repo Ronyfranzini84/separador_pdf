@@ -1,7 +1,22 @@
+# Ambiente virtual
 .venv/
 venv/
+.env
+
+# Cache do Python
 __pycache__/
 *.pyc
-.env
+
+# Saídas do PyInstaller (geradas com: pyinstaller "Divisor de PDF.spec")
+build/
+dist/
+*.zip
+
+# PDFs divididos gerados ao testar o programa
+*_dividido/
+
+# Editores / sistema
 .vscode/
 .idea/
+Thumbs.db
+desktop.ini
